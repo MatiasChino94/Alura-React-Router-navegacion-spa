@@ -2,6 +2,7 @@
 import './assets/css/base/base.css';
 import './assets/css/componentes/card.css';
 import Home from './pages/Home';
+import { Page404 } from './pages/Page404';
 import Sobre from './pages/Sobre';
 
 
@@ -27,16 +28,18 @@ function App() {
 
 
 
-
+  //MANDAMOS LA INFO POR PROPS
+  //LE INDICAMOS EL PATH
+  //LO SEGUNDO EL ELEMENT, EL ELEMENTO QUE QUIRO QUE SE MUESTRE EN EL PATH '/' 
+  
+  //agregando un 404 si la ruta no existe
   return (
     <>
       <Router>
         <Routes>
-          //MANDAMOS LA INFO POR PROPS
-          //LE INDICAMOS EL PATH
-          //LO SEGUNDO EL ELEMENT, EL ELEMENTO QUE QUIRO QUE SE MUESTRE EN EL PATH '/' 
           <Route path='/' element={<Home/>}/>
           <Route path='/sobre' element={<Sobre/>} />
+          <Route path='*' element={<Page404/>}/>
         </Routes>
       </Router>
     </>
