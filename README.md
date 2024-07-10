@@ -2,8 +2,9 @@
 
 # Lo que aprendimos en esta aula:
 
-- Hemos creado un componente 404 para cuando el usuario intente acceder alguna página que no existe.
 
-- Vimos la diferencia entre una SPA (Single Page Application) y un MPA (Multi Pages Application).
+- Cambiamos la tag <a> del html para que React pueda entender utilizando <Link>.
 
-- Montamos una navbar utilizando React Router para simular una MPA (Multi Pages Application).
+- Utilizamos la biblioteca axios para hacer requisiciones en el servidos para buscar artículos.
+
+- Hicimos una requisición de un artículo específico pasando el "id" del curso utilizando `useEffect`.
